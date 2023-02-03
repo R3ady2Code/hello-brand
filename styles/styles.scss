@@ -352,7 +352,6 @@ body {
 	&__nav {
 		display: flex;
 		flex-direction: column;
-		padding-bottom: 20px;
 	}
 	&__link {
 		padding-top: 10px;
@@ -361,6 +360,23 @@ body {
 		cursor: pointer;
 		&:hover {
 			color: $primary-color;
+		}
+	}
+	&__socials-media {
+		display: flex;
+		gap: 10px;
+		.social-media {
+			border: 1px solid #000000;
+			mix-blend-mode: normal;
+			span {
+				color: #000000;
+			}
+			&:hover {
+				background-color: #000000;
+				span {
+					color: #ffffff;
+				}
+			}
 		}
 	}
 }
